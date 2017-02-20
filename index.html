@@ -17,9 +17,9 @@
 
         <h1>Upload an Image </h1>
 
-        <input type="file" id="grabFile" multiple size="50" onchange="myFunction()">
+        <img id="blah" alt="your image" />
 
-        <p id="demo"></p>
+        <input type="file" onchange="document.getElementById('blah').src = window.URL.createObjectURL(this.files[0])">
 
     </body>
 
@@ -31,5 +31,6 @@
 		crossorigin="anonymous"></script>
 
     <!-- Custom JS -->
-    <script src="script/action.js"></script>
+    <!-- <script src="script/action.js"></script> -->
+
 </html>
